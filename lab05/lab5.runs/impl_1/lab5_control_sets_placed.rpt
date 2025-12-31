@@ -1,0 +1,292 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1.1 (win64) Build 6233196 Thu Sep 11 21:27:30 MDT 2025
+| Date         : Thu Jan  1 01:57:42 2026
+| Host         : kaiden running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab5_control_sets_placed.rpt
+| Design       : lab5
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   214 |
+|    Minimum number of control sets                        |   214 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |  1236 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   214 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |   200 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              26 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1141 |          428 |
+| Yes          | No                    | No                     |               8 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            6949 |         2253 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------+----------------------------+------------------+----------------+--------------+
+|  Clock Signal  |         Enable Signal        |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------------+----------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | lcd0/icode[3]_i_1_n_0        |                            |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | lcd0/tcode[3]_i_1_n_0        |                            |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0 | lcd0/reset_n               |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | ans_cnt[7]_i_1_n_0           | lcd0/reset_n               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ans[102][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[120][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[111][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[119][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[122][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[121][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[123][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[115][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[0][9]_i_1_n_0            | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[103][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[104][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[105][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[10][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[117][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[118][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[11][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[125][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[106][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[110][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[124][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[126][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[128][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[113][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[150][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[112][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[127][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[108][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[107][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[109][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[116][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[100][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[114][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[138][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[170][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[130][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[13][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[129][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[147][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[143][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[149][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[132][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[136][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[141][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[14][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[133][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[139][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[155][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[137][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[146][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[153][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[159][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[151][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[163][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[12][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[135][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[15][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[154][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[160][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[152][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[161][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[162][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[166][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[167][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[131][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[140][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[145][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[168][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[165][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[169][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[158][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[134][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[16][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[144][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[157][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[171][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[156][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[148][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[142][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[164][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[172][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[173][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[174][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[21][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[22][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[176][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[18][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[196][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[175][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[183][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[177][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[184][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[189][9]_i_1_n_0          | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[194][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[190][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[188][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[179][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[17][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[182][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[181][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[180][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[186][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[191][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[192][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[185][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[197][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[193][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[195][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[178][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[198][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[199][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[187][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[19][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[1][9]_i_1_n_0            | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[20][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[3][9]_i_1_n_0            | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[45][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[35][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[41][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[46][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[47][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[29][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[48][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[23][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[30][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[49][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[4][9]_i_1_n_0            | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[36][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[27][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[39][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[28][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[24][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[34][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[32][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[26][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[31][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[38][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[42][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[33][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[2][9]_i_1_n_0            | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[40][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[43][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[25][9]_i_2_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[44][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[37][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[60][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[71][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[50][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[57][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[72][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[54][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[78][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[79][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[81][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[55][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[82][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[76][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[53][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[83][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[65][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[70][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[5][9]_i_1_n_0            | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[64][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[6][9]_i_1_n_0            | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[80][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[84][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[85][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[51][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[7][9]_i_1_n_0            | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[68][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[62][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[67][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[63][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[56][9]_i_1_n_0           | lcd0/reset_n               |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG | ans[61][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[52][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[69][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[73][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[58][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[75][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[66][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[77][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[74][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[59][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[88][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[89][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[90][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[96][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[87][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[9][9]_i_1_n_0            | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[93][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[92][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[99][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[98][9]_i_1_n_0           | lcd0/reset_n               |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG | ans[91][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[97][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[95][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[8][9]_i_1_n_0            | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[94][9]_i_1_n_0           | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | ans[86][9]_i_1_n_0           | lcd0/reset_n               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | ans[101][9]_i_1_n_0          | lcd0/reset_n               |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | jdx[13]_i_1_n_0              | lcd0/reset_n               |                7 |             14 |         2.00 |
+|  clk_IBUF_BUFG | btn_db0/state_reg[2]_rep__0  | lcd0/reset_n               |               11 |             15 |         1.36 |
+|  clk_IBUF_BUFG | dsply_buf[0][23]_i_1_n_0     | lcd0/reset_n               |               11 |             24 |         2.18 |
+|  clk_IBUF_BUFG | dsply_buf[1][23]_i_1_n_0     | lcd0/reset_n               |               11 |             24 |         2.18 |
+|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0 | lcd0/text_count[0]_i_1_n_0 |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG |                              |                            |                8 |             26 |         3.25 |
+|  clk_IBUF_BUFG |                              | display_counter[0]_i_1_n_0 |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG | lcd0/init_e_i_1_n_0          | lcd0/reset_n               |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG |                              | lcd0/reset_n               |              421 |           1114 |         2.65 |
+|  clk_IBUF_BUFG | ans_hex[25][23]_i_1_n_0      | lcd0/reset_n               |             1746 |           4800 |         2.75 |
++----------------+------------------------------+----------------------------+------------------+----------------+--------------+
+
+

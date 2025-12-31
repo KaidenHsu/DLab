@@ -12,7 +12,7 @@ Circuit implementation on the Zedboard FPGA
 [Lab2][2]|3x3 matrix multiplier
 [Lab3][3]|Simple I/O control circuit
 [Lab4][4]|UART I/O circuit
-Lab5|Sieve algorithm & Standard 1602 character LCD display
+[Lab5][5]|Sieve algorithm & Standard 1602 character LCD display
 Lab7|4 x 4 pipelined matrix multiplier
 Lab8|MD5 password cracking circuit
 Lab9|Correlation filter circuit
@@ -22,3 +22,4 @@ Lab10|VGA video interface circuit
 [2]: lab02/
 [3]: lab03/
 [4]: lab04/
+[5]: lab05/
