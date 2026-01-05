@@ -48,7 +48,8 @@ module md5(
     // hash
     reg [0 : 128-1] hash = 0;
 
-    // hash stored in little endianness to match C endianness
+    // hash stored in little endianness to match C's little-endian convention
+    // little endianness: smaller bytes come first for each word in the memory layout
     wire [0:127] hash_le = { hash[24  +: 8], hash[16  +: 8], hash[8   +: 8], hash[0  +: 8],
                              hash[56  +: 8], hash[48  +: 8], hash[40  +: 8], hash[32 +: 8],
                              hash[88  +: 8], hash[80  +: 8], hash[72  +: 8], hash[64 +: 8],
@@ -61,7 +62,7 @@ module md5(
 
     reg [32-1 : 0] f = 0;
     reg [32-1 : 0] g = 0;
-    reg [32-1 : 0] w_g = 0; // w[g] (we optimize out the MD5 msg buffer logic (Sw-HW co-design))
+    reg [32-1 : 0] w_g = 0; // w[g] (we optimize out the MD5 msg buffer logic (SW-HW co-design))
     reg [0 : 32-1] rotate_left_buf = 0;
 
     // converts password from binary to decimal string format
@@ -86,12 +87,14 @@ module md5(
     // --------------- END VARIABLES & SUBMODULES ---------------
 
     // --------------- FSM ---------------
+    // the password cracking time can be further reduced by
+    // packing FG, ROTATE_LEFT, and ABCD into 1 single state
     localparam S_MD5_IDLE = 0;
     localparam S_MD5_PREPROCESS = 1; // reset hash & convert password to decimal string format
-    localparam S_MD5_FG = 2; // calculate f, g & fill rotate_left_buf
-    localparam S_MD5_ROTATE_LEFT = 3; // rotate left r[i] times
+    localparam S_MD5_FG = 2; // calculate f, g
+    localparam S_MD5_ROTATE_LEFT = 3; // write to rotate_left_buf and left-rotate it by r[main_loop_counter]
     localparam S_MD5_ABCD = 4; // update a, b, c, d
-    localparam S_MD5_COMPUTE_HASH = 5; // update hahs (h0 ~ h3)
+    localparam S_MD5_COMPUTE_HASH = 5; // update hash (h0 ~ h3)
     localparam S_MD5_COMPARE = 6; // compare hash to golden & increment current_passwd if unmatched
     localparam S_MD5_DONE = 7; // enters this state as soon as any MD5 instance asserts valid
 
@@ -306,17 +309,17 @@ module md5(
         case (MD5_state)
             S_MD5_ROTATE_LEFT: begin
                 case (g[3 : 0]) // 4 LSBs (mod 16)
-                    // w[0] uses message bytes 0..3: reverse dec_str_reg bytes 7..4 into little-endian word
+                    // w[0] uses message bytes 0~3: reverse dec_str_reg bytes 7..4 into little-endian word
                     0: w_g = {passwd_dec_str_reg[39:32], passwd_dec_str_reg[47:40],
                               passwd_dec_str_reg[55:48], passwd_dec_str_reg[63:56]};
-                    // w[1] uses message bytes 4..7: reverse dec_str_reg bytes 3..0 into little-endian word
+                    // w[1] uses message bytes 4~7: reverse dec_str_reg bytes 3..0 into little-endian word
                     1: w_g = {passwd_dec_str_reg[7:0],   passwd_dec_str_reg[15:8],
                               passwd_dec_str_reg[23:16], passwd_dec_str_reg[31:24]};
-                    // 2: w_g = 1 << 31; // append a single '1' bit to the message
+                    // append a single '1' bit to the message (matched to the little-endian word byte ordering)
                     2: w_g = 32'h0000_0080;
-                    // 14: w_g = 1 << 30; // 64 (password length in bits = 8*8)
+                    //  password length in bits = 8*8 = 64 (matched to the little-endian word byte ordering)
                     14: w_g = 32'h0000_0040;
-                    default: w_g = 0;
+                    default: w_g = 0; // the rest of msg buffer is 0
                 endcase
             end
             default: w_g = 0;
@@ -330,11 +333,11 @@ module md5(
             case (MD5_state)
                 S_MD5_IDLE : rotate_left_buf <= 0;
                 S_MD5_ROTATE_LEFT: begin
-                    if (rotate_left_counter == 0) begin
+                    if (rotate_left_counter == 0) begin // writes to rotate_left_buf
                         rotate_left_buf <= a + f + k_i + w_g;
-                    end else begin
-                        // rotate left by r_i
-                        for (i = 0; i < 32; i = i + 1) begin
+                    end else begin // rotate left by r_i
+                        for (i = 0; i < 32; i=i+1) begin
+                            // synthesizes to the left rotate register
                             rotate_left_buf[i] <= rotate_left_buf[(i + r_i) % 32];
                         end
                     end

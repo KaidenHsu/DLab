@@ -33,6 +33,14 @@ module lab8(
     output LCD_E,
     output [3:0] LCD_D
 );
+    // --------------- GOLDEN ---------------
+    // the golden is the C-produced byte stream, which is stored "word-major, little-endian"
+    reg [0 : 128-1] passwd_hash = 128'hE9982EC5CA981BD365603623CF4B2277; // golden
+    // reg [0 : 128-1] passwd_hash = 128'hb684c3e50210eefca8494574456dd36f; // 32
+    // --------------- END GOLDEN ---------------
+    
+
+
     // --------------- VARIABLES & SUBMODULES ---------------
     wire [4-1 : 0] debounced_btn;
     wire [4-1 : 0] one_pulsed_btn;
@@ -40,8 +48,6 @@ module lab8(
     wire [8*8-1 : 0] passwd_arr [0 : `HASHERS-1];
     wire [0 : `HASHERS-1] rotate_arr;
     wire [0 : `HASHERS-1] valid_arr;
-    reg [0 : 128-1] passwd_hash = 128'hE9982EC5CA981BD365603623CF4B2277; // golden
-    // reg [0 : 128-1] passwd_hash = 128'hb684c3e50210eefca8494574456dd36f; // 32
         
 
     wire md5_start;
