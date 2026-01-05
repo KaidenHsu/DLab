@@ -14,7 +14,7 @@ Circuit implementation on the Zedboard FPGA
 [Lab4][4]|UART I/O circuit
 [Lab5][5]|Sieve algorithm & Standard 1602 character LCD display
 Lab7|4 x 4 pipelined matrix multiplier
-Lab8|MD5 password cracking circuit
+[Lab8][8]|MD5 password cracking circuit
 Lab9|Correlation filter circuit
 Lab10|VGA video interface circuit
 
@@ -23,3 +23,4 @@ Lab10|VGA video interface circuit
 [3]: lab03/
 [4]: lab04/
 [5]: lab05/
+[8]: lab08/
