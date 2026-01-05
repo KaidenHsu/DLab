@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_lab8_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_lab8" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="998,118.360 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000,376.328 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="316"></NameColumnWidth>
+      <ValueColumnWidth column_width="336"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="57" />
+   <wave_markers>
+      <marker time="42685000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tb_lab8/uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/usr_btn" type="array">
+      <obj_property name="ElementShortName">usr_btn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">usr_btn[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/debounced_btn" type="array">
+      <obj_property name="ElementShortName">debounced_btn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">debounced_btn[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/one_pulsed_btn" type="array">
+      <obj_property name="ElementShortName">one_pulsed_btn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">one_pulsed_btn[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/passwd_arr" type="array">
+      <obj_property name="ElementShortName">passwd_arr[0:9][63:0]</obj_property>
+      <obj_property name="ObjectShortName">passwd_arr[0:9][63:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/rotate_arr" type="array">
+      <obj_property name="ElementShortName">rotate_arr[0:9]</obj_property>
+      <obj_property name="ObjectShortName">rotate_arr[0:9]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/valid_arr" type="array">
+      <obj_property name="ElementShortName">valid_arr[0:9]</obj_property>
+      <obj_property name="ObjectShortName">valid_arr[0:9]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/r" type="array">
+      <obj_property name="ElementShortName">r[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/k" type="array">
+      <obj_property name="ElementShortName">k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/time_conversion_counter" type="array">
+      <obj_property name="ElementShortName">time_conversion_counter[16:0]</obj_property>
+      <obj_property name="ObjectShortName">time_conversion_counter[16:0]</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/timer" type="array">
+      <obj_property name="ElementShortName">timer[23:0]</obj_property>
+      <obj_property name="ObjectShortName">timer[23:0]</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/timer_dec_str" type="array">
+      <obj_property name="ElementShortName">timer_dec_str[55:0]</obj_property>
+      <obj_property name="ObjectShortName">timer_dec_str[55:0]</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/timer_dec_str_valid" type="logic">
+      <obj_property name="ElementShortName">timer_dec_str_valid</obj_property>
+      <obj_property name="ObjectShortName">timer_dec_str_valid</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/ans" type="array">
+      <obj_property name="ElementShortName">ans[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ans[63:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/ans_valid" type="logic">
+      <obj_property name="ElementShortName">ans_valid</obj_property>
+      <obj_property name="ObjectShortName">ans_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/row_A" type="array">
+      <obj_property name="ElementShortName">row_A[127:0]</obj_property>
+      <obj_property name="ObjectShortName">row_A[127:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/row_B" type="array">
+      <obj_property name="ElementShortName">row_B[127:0]</obj_property>
+      <obj_property name="ObjectShortName">row_B[127:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/n_state" type="array">
+      <obj_property name="ElementShortName">n_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">n_state[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/S_IDLE" type="array">
+      <obj_property name="ElementShortName">S_IDLE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_IDLE[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/S_WAIT_BTN" type="array">
+      <obj_property name="ElementShortName">S_WAIT_BTN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_WAIT_BTN[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/S_MAIN_LOOP" type="array">
+      <obj_property name="ElementShortName">S_MAIN_LOOP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_MAIN_LOOP[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/S_DISPLAY" type="array">
+      <obj_property name="ElementShortName">S_DISPLAY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_DISPLAY[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/md5_start" type="logic">
+      <obj_property name="ElementShortName">md5_start</obj_property>
+      <obj_property name="ObjectShortName">md5_start</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /golden_i" type="array">
+      <obj_property name="ElementShortName">golden_i[0:127]</obj_property>
+      <obj_property name="ObjectShortName">golden_i[0:127]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /ans_valid_i" type="logic">
+      <obj_property name="ElementShortName">ans_valid_i</obj_property>
+      <obj_property name="ObjectShortName">ans_valid_i</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /current_passwd" type="array">
+      <obj_property name="ElementShortName">current_passwd[26:0]</obj_property>
+      <obj_property name="ObjectShortName">current_passwd[26:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /main_loop_counter" type="array">
+      <obj_property name="ElementShortName">main_loop_counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">main_loop_counter[5:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /rotate_left_counter" type="array">
+      <obj_property name="ElementShortName">rotate_left_counter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rotate_left_counter[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /preprocess_counter" type="logic">
+      <obj_property name="ElementShortName">preprocess_counter</obj_property>
+      <obj_property name="ObjectShortName">preprocess_counter</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /hash" type="array">
+      <obj_property name="ElementShortName">hash[0:127]</obj_property>
+      <obj_property name="ObjectShortName">hash[0:127]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /a" type="array">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /b" type="array">
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /c" type="array">
+      <obj_property name="ElementShortName">c[31:0]</obj_property>
+      <obj_property name="ObjectShortName">c[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /d" type="array">
+      <obj_property name="ElementShortName">d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /f" type="array">
+      <obj_property name="ElementShortName">f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">f[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /g" type="array">
+      <obj_property name="ElementShortName">g[31:0]</obj_property>
+      <obj_property name="ObjectShortName">g[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /w_g" type="array">
+      <obj_property name="ElementShortName">w_g[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_g[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /rotate_left_buf" type="array">
+      <obj_property name="ElementShortName">rotate_left_buf[0:31]</obj_property>
+      <obj_property name="ObjectShortName">rotate_left_buf[0:31]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /passwd_dec_str_start" type="logic">
+      <obj_property name="ElementShortName">passwd_dec_str_start</obj_property>
+      <obj_property name="ObjectShortName">passwd_dec_str_start</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /passwd_dec_str" type="array">
+      <obj_property name="ElementShortName">passwd_dec_str[63:0]</obj_property>
+      <obj_property name="ObjectShortName">passwd_dec_str[63:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /passwd_dec_str_reg" type="array">
+      <obj_property name="ElementShortName">passwd_dec_str_reg[63:0]</obj_property>
+      <obj_property name="ObjectShortName">passwd_dec_str_reg[63:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /passwd_dec_str_valid" type="logic">
+      <obj_property name="ElementShortName">passwd_dec_str_valid</obj_property>
+      <obj_property name="ObjectShortName">passwd_dec_str_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /passwd_o" type="array">
+      <obj_property name="ElementShortName">passwd_o[63:0]</obj_property>
+      <obj_property name="ObjectShortName">passwd_o[63:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /rotate_o" type="logic">
+      <obj_property name="ElementShortName">rotate_o</obj_property>
+      <obj_property name="ObjectShortName">rotate_o</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /valid_o" type="logic">
+      <obj_property name="ElementShortName">valid_o</obj_property>
+      <obj_property name="ObjectShortName">valid_o</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /MD5_state" type="array">
+      <obj_property name="ElementShortName">MD5_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">MD5_state[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /MD5_n_state" type="array">
+      <obj_property name="ElementShortName">MD5_n_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">MD5_n_state[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /S_MD5_IDLE" type="array">
+      <obj_property name="ElementShortName">S_MD5_IDLE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_MD5_IDLE[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /S_MD5_PREPROCESS" type="array">
+      <obj_property name="ElementShortName">S_MD5_PREPROCESS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_MD5_PREPROCESS[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /S_MD5_FG" type="array">
+      <obj_property name="ElementShortName">S_MD5_FG[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_MD5_FG[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /S_MD5_ROTATE_LEFT" type="array">
+      <obj_property name="ElementShortName">S_MD5_ROTATE_LEFT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_MD5_ROTATE_LEFT[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /S_MD5_ABCD" type="array">
+      <obj_property name="ElementShortName">S_MD5_ABCD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_MD5_ABCD[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /S_MD5_COMPUTE_HASH" type="array">
+      <obj_property name="ElementShortName">S_MD5_COMPUTE_HASH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_MD5_COMPUTE_HASH[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /S_MD5_COMPARE" type="array">
+      <obj_property name="ElementShortName">S_MD5_COMPARE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_MD5_COMPARE[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab8/uut/\genloop[0].md5 /S_MD5_DONE" type="array">
+      <obj_property name="ElementShortName">S_MD5_DONE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_MD5_DONE[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>
