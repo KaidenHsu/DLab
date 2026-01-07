@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef" \
+"../../../../lab9.srcs/sources_1/imports/sources_1/imports/new/LCD_module.v" \
+"../../../../lab9.srcs/sources_1/imports/sources_1/imports/new/debounce.v" \
+"../../../../lab9.srcs/sources_1/new/lab9.v" \
+"../../../../lab9.srcs/sources_1/imports/sources_1/new/one_pulser.v" \
+"../../../../lab9.srcs/sources_1/imports/new/sram.v" \
+"../../../../lab9.srcs/sim_1/new/tb_lab9.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

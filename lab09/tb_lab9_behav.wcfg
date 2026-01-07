@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_lab9_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_lab9" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="29,650.853 ns"></ZoomStartTime>
+      <ZoomEndTime time="30,319.924 ns"></ZoomEndTime>
+      <Cursor1Time time="30,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="316"></NameColumnWidth>
+      <ValueColumnWidth column_width="298"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/tb_lab9/uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/usr_btn" type="array">
+      <obj_property name="ElementShortName">usr_btn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">usr_btn[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/usr_led" type="array">
+      <obj_property name="ElementShortName">usr_led[3:0]</obj_property>
+      <obj_property name="ObjectShortName">usr_led[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/debounced_btn" type="array">
+      <obj_property name="ElementShortName">debounced_btn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">debounced_btn[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/one_pulsed_btn" type="array">
+      <obj_property name="ElementShortName">one_pulsed_btn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">one_pulsed_btn[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/curr_pos" type="array">
+      <obj_property name="ElementShortName">curr_pos[10:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_pos[10:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/g" type="array">
+      <obj_property name="ElementShortName">g[0:63][7:0]</obj_property>
+      <obj_property name="ObjectShortName">g[0:63][7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/f" type="array">
+      <obj_property name="ElementShortName">f[0:63][7:0]</obj_property>
+      <obj_property name="ObjectShortName">f[0:63][7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/corr_counter" type="array">
+      <obj_property name="ElementShortName">corr_counter[6:0]</obj_property>
+      <obj_property name="ObjectShortName">corr_counter[6:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/corr" type="array">
+      <obj_property name="ElementShortName">corr[21:0]</obj_property>
+      <obj_property name="ObjectShortName">corr[21:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/max_pos" type="array">
+      <obj_property name="ElementShortName">max_pos[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_pos[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/max_val" type="array">
+      <obj_property name="ElementShortName">max_val[23:0]</obj_property>
+      <obj_property name="ObjectShortName">max_val[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/max_pos_hex_str" type="array">
+      <obj_property name="ElementShortName">max_pos_hex_str[23:0]</obj_property>
+      <obj_property name="ObjectShortName">max_pos_hex_str[23:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/max_val_hex_str" type="array">
+      <obj_property name="ElementShortName">max_val_hex_str[47:0]</obj_property>
+      <obj_property name="ObjectShortName">max_val_hex_str[47:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/row_A" type="array">
+      <obj_property name="ElementShortName">row_A[127:0]</obj_property>
+      <obj_property name="ObjectShortName">row_A[127:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/row_B" type="array">
+      <obj_property name="ElementShortName">row_B[127:0]</obj_property>
+      <obj_property name="ObjectShortName">row_B[127:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/n_state" type="array">
+      <obj_property name="ElementShortName">n_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">n_state[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/S_IDLE" type="array">
+      <obj_property name="ElementShortName">S_IDLE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_IDLE[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/S_WAIT_G" type="array">
+      <obj_property name="ElementShortName">S_WAIT_G[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_WAIT_G[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/S_READ_G" type="array">
+      <obj_property name="ElementShortName">S_READ_G[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_READ_G[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/S_WAIT_F" type="array">
+      <obj_property name="ElementShortName">S_WAIT_F[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_WAIT_F[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/S_READ_F" type="array">
+      <obj_property name="ElementShortName">S_READ_F[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_READ_F[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/S_COMPUTE_CORR" type="array">
+      <obj_property name="ElementShortName">S_COMPUTE_CORR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_COMPUTE_CORR[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/S_COMPARE" type="array">
+      <obj_property name="ElementShortName">S_COMPARE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_COMPARE[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/S_LCD" type="array">
+      <obj_property name="ElementShortName">S_LCD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_LCD[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/S_DONE" type="array">
+      <obj_property name="ElementShortName">S_DONE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_DONE[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/ram0/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/ram0/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/ram0/addr" type="array">
+      <obj_property name="ElementShortName">addr[10:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/ram0/data_i" type="array">
+      <obj_property name="ElementShortName">data_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/ram0/data_o" type="array">
+      <obj_property name="ElementShortName">data_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_lab9/uut/ram0/RAM" type="array">
+      <obj_property name="ElementShortName">RAM[2047:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM[2047:0][7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

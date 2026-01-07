@@ -1,0 +1,11 @@
+0.7
+2020.2
+Sep 11 2025
+21:29:11
+C:/Users/ryanh/fpga/dlab/lab9/lab9.sim/sim_1/behav/xsim/glbl.v,1748340170,verilog,,,,glbl,,,,,,,,
+C:/Users/ryanh/fpga/dlab/lab9/lab9.srcs/sim_1/new/tb_lab9.v,1767626917,verilog,,,,tb_lab9,,,../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ryanh/fpga/dlab/lab9/lab9.srcs/sources_1/imports/new/sram.v,1767603239,verilog,,C:/Users/ryanh/fpga/dlab/lab9/lab9.srcs/sim_1/new/tb_lab9.v,,sram,,,../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ryanh/fpga/dlab/lab9/lab9.srcs/sources_1/imports/sources_1/imports/new/LCD_module.v,1766992179,verilog,,C:/Users/ryanh/fpga/dlab/lab9/lab9.srcs/sources_1/imports/sources_1/imports/new/debounce.v,,LCD_module,,,../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ryanh/fpga/dlab/lab9/lab9.srcs/sources_1/imports/sources_1/imports/new/debounce.v,1767599839,verilog,,C:/Users/ryanh/fpga/dlab/lab9/lab9.srcs/sources_1/new/lab9.v,,debounce,,,../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ryanh/fpga/dlab/lab9/lab9.srcs/sources_1/imports/sources_1/new/one_pulser.v,1767360297,verilog,,C:/Users/ryanh/fpga/dlab/lab9/lab9.srcs/sources_1/imports/new/sram.v,,one_pulser,,,../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ryanh/fpga/dlab/lab9/lab9.srcs/sources_1/new/lab9.v,1767800158,verilog,,C:/Users/ryanh/fpga/dlab/lab9/lab9.srcs/sources_1/imports/sources_1/new/one_pulser.v,,lab9,,,../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
