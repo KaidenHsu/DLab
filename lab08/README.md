@@ -7,4 +7,4 @@ Lab8 為破解 MD5 雜湊 (hashing) ，目標是在已知輸入範圍的前提�
 <br>
 此外，我設計了 rkRAM 來集中管理每一輪所需的旋轉量 (rotation amount: r table) 與常數 (k table)，並以循序輪替的方式輸出目前輪次的參數，讓多個運算核心能同步使用相同的設定而不需重複放置常數表。最後在效能上，我使用 10 個 MD5 模組平行解碼，將搜尋空間分段同時掃描，以吞吐量 (throughput) 換取整體破解時間的縮短，並在任一 MD5 模組找到結果後即停止其餘運算，避免不必要的資源浪費。
 
-<img src="/images/MD5_cracker.jpg" alt="MD5_cracker" width="480" />
+<p align="center"><img src="/images/MD5_cracker.jpg" alt="MD5_cracker" width="480" /></p>
