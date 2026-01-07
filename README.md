@@ -2,7 +2,7 @@
 
 Circuit implementation on the Zedboard FPGA
 
-![Zedboard](images/image.png)
+<p align="center"><img src="images/image.png" alt="Zedboard" width="960" /></p>
 
 ## Labs
 
