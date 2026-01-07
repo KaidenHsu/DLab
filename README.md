@@ -1,8 +1,6 @@
 # DLab
 
-Circuit implementation on the Zedboard FPGA
-
-<p align="center"><img src="images/image.png" alt="Zedboard" width="360" /></p>
+Circuit implementation in Verilog on the AMD Xilinx Zedboard FPGA
 
 ## Labs
 
@@ -25,3 +23,5 @@ Lab10|VGA video interface circuit
 [5]: lab05/
 [8]: lab08/
 [9]: lab09/
+
+<p align="center"><img src="images/image.png" alt="Zedboard" width="360" /></p>
