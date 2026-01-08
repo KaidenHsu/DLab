@@ -1,4 +1,4 @@
-# DLab
+# DLab 數位電路實驗
 
 Circuit implementation in Verilog on the AMD Xilinx Zedboard FPGA
 
