@@ -2,7 +2,7 @@
 
 Circuit implementation in Verilog on the AMD Xilinx Zedboard FPGA
 
-<p align="center"><img src="images/image.png" alt="Zedboard" width="480" /></p>
+<p align="center"><img src="images/zedboard.png" alt="Zedboard" width="480" /></p>
 
 ## Labs
 
@@ -13,7 +13,7 @@ Circuit implementation in Verilog on the AMD Xilinx Zedboard FPGA
 [Lab3][3]|Simple I/O control circuit
 [Lab4][4]|UART I/O circuit
 [Lab5][5]|Sieve algorithm & Standard 1602 character LCD display
-Lab7|4x4 pipelined matrix multiplier
+[Lab7][7]|4x4 pipelined matrix multiplier
 [Lab8][8]|MD5 password cracking circuit
 [Lab9][9]|Correlation filter circuit
 Lab10|VGA video interface circuit
@@ -23,5 +23,6 @@ Lab10|VGA video interface circuit
 [3]: lab03/
 [4]: lab04/
 [5]: lab05/
+[7]: lab07/
 [8]: lab08/
 [9]: lab09/
