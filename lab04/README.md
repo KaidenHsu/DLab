@@ -5,3 +5,4 @@ Lab4 以 UART 通訊與電腦終端 (terminal) 溝通，讓使用者輸入兩個
 <br>
 <br>
 另外，我也練習了驗證與除錯的方法。我用基礎的 SystemVerilog 撰寫 testbench 來模擬輸入字元與 Enter 的行為，確認字串轉數字、數字運算、以及輸出格式都符合預期。另外，在 FPGA 板上測試時，我使用 Vivado 的 ILA (Integrated Logic Analyzer) 觀察關鍵暫存器與狀態變化，快速找出問題的起源。透過這個 lab 的經驗，我更熟悉「先用模擬縮小問題範圍，再用 ILA 驗證硬體實際行為」的除錯流程。
+<p align="center"><img src="/images/gcd.jpg" alt="gcd calculation" width="720" /></p>
