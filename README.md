@@ -16,7 +16,7 @@ Circuit implementation in Verilog on the AMD Xilinx Zedboard FPGA
 [Lab7][7]|4x4 pipelined matrix multiplier
 [Lab8][8]|MD5 password cracking circuit
 [Lab9][9]|Correlation filter circuit
-Lab10|VGA video interface circuit
+[Lab10][10]|VGA video interface circuit
 
 [1]: lab01/
 [2]: lab02/
@@ -26,3 +26,4 @@ Lab10|VGA video interface circuit
 [7]: lab07/
 [8]: lab08/
 [9]: lab09/
+[10]: lab10/
