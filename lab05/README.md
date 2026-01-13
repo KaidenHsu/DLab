@@ -1,3 +1,5 @@
+# Lab 5. Sieve Algorithm & Standard 1602 Character LCD Display
+
 Lab5 以 1602 LCD 為輸出，要求電路計算並依序展示質數序列，並能透過按鍵切換顯示方向與內容更新。LCD 驅動模組由 lab 提供，而我主要負責將 Sieve Algorithm 轉成可在 FPGA 上運作的循序電路，並設計控制流程讓計算結果能穩定地被整理與顯示。
 <br>
 <br>

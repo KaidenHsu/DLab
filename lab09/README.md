@@ -1,3 +1,5 @@
+# Lab 9. Correlation Filter Circuit
+
 在 lab9 中，本實驗實作一個 correlation filter 電路，用來在一段訊號中找出與樣板最相似的位置，並將結果顯示在 LCD 上。整體流程包含從記憶體讀取資料、進行相關 (correlation) 運算，以及比較並記錄最大值，讓我實際體會到如何將數位訊號處理 (DSP) 演算法轉換為可在 FPGA 上執行的循序電路。
 <br>
 <br>

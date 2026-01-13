@@ -8,15 +8,15 @@ Circuit implementation in Verilog on the AMD Xilinx Zedboard FPGA
 
  Labs   | Descriptions
 --------|:-----
-[Lab1][1]|Sequential binary multiplier
-[Lab2][2]|3x3 matrix multiplier
-[Lab3][3]|Simple I/O control circuit
-[Lab4][4]|UART I/O circuit
-[Lab5][5]|Sieve algorithm & Standard 1602 character LCD display
-[Lab7][7]|4x4 pipelined matrix multiplier
-[Lab8][8]|MD5 password cracking circuit
-[Lab9][9]|Correlation filter circuit
-[Lab10][10]|VGA video interface circuit
+[Lab1][1]|Sequential Binary Multiplier
+[Lab2][2]|3x3 Matrix Multiplier
+[Lab3][3]|Simple I/O Control Circuit
+[Lab4][4]|UART I/O Circuit
+[Lab5][5]|Sieve Algorithm & Standard 1602 Character LCD Display
+[Lab7][7]|4x4 Pipelined Matrix Multiplier
+[Lab8][8]|MD5 Password Cracking Circuit
+[Lab9][9]|Correlation Filter Circuit
+[Lab10][10]|VGA Video Interface Circuit
 
 [1]: lab01/
 [2]: lab02/

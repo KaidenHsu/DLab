@@ -1,3 +1,5 @@
+# Lab 10. VGA Video Interface Circuit
+
 在 DLab Lab10 中，本實驗以 VGA 顯示為主軸，介紹綠幕 (green screen) 移除這種在電影與圖片後製中常見的技巧，並實作其對應的硬體架構。若系統採用 CPU 逐一計算每個 pixel 的 RGB 值，會對處理器造成極大的負擔，因此在實際的 SoC 中，這類影像處理 (video processing) 重複性工作多半交由專門的硬體加速器來完成，本實驗便要求設計硬體達成圖片的疊合與顯示。
 <br>
 <br>
