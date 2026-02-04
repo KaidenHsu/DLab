@@ -1,4 +1,6 @@
-# DLab 數位電路實驗
+# DLab (Digital System Lab)
+
+[![zh-tw](https://img.shields.io/badge/lang-繁體中文-blue.svg)](README.zh-tw.md)
 
 DLab 為一堂國立陽明交通大學 (NYCU) 開設，以實作為核心的數位系統設計 (digital design) 課程。每個 lab 都要求參與者獨立完成 RTL 與對應的 testbench，包括從規格理解 (specs) 、設計實作 (design) 到功能驗證 (verification)。我在課程中使用的開發板是 Digilent ZedBoard，搭載 Zynq-7000，一款結合 ARM Cortex-A9 與 FPGA 的 SoC 平台 (本實驗只使用 PL 部分)，並搭配 AMD Xilinx Vivado 進行設計與驗證。
 <br>
