@@ -6,9 +6,13 @@ DLab 為一堂國立陽明交通大學 (NYCU) 開設，以實作為核心的數�
 <br>
 <br>
 整個學期共完成 10 個 lab，內容涵蓋 Verilog RTL 撰寫、FSM 設計、資料路徑 (datapath) 與控制邏輯 (controller) 規劃、記憶體 (SRAM) 與周邊模組整合，以及完整 testbench 的撰寫與驗證流程建立。從一開始單純的行為描述，到後來需要依照 spec 思考架構選擇、資源使用 (utilization) 與時序限制 (timing)，逐步培養將抽象需求轉換為可合成 (synthesize) 電路的能力。在驗證 (verification) 方面，除了透過模擬檢查功能正確性，我也學會在板上實測時搭配 Vivado ILA (Integrated Logic Analyzer) 觀察內部訊號，協助除錯與理解實際硬體行為。
+Lab 5 uses a 1602 LCD as the output device, requiring the circuit to calculate and sequentially display prime numbers while allowing users to toggle display direction and content updates via buttons. While the LCD driver module was provided, I was primarily responsible for converting the Sieve Algorithm into a sequential circuit capable of running on an FPGA and designing the control flow to ensure calculation results were properly organized and displayed.
 <br>
 <br>
-經過 DLab 的訓練，我在數位設計上的能力有明顯成長，能依據題目規格思考整體架構，並針對效能、功耗與面積 (PPA) 進行取捨與優化。實際將設計下載到 FPGA 上運作，也讓我體會到模擬與真實電路之間仍會受到電性與物理因素影響，能親眼看到電路在硬體上實際成功運作給我帶來很大的成就感。這堂課讓我在 RTL coding 與 testbench 撰寫能力上都有顯著進步，並對 FPGA 上完整的數位系統設計與驗證流程建立了更紮實的理解。
+I learned that when rewriting an algorithm for hardware, it is essential to split a process that would normally complete all at once in software into multiple clock cycles. This ensures that the combinational logic can finish within a single cycle to avoid timing violations, using an FSM to schedule the calculation sequence and data updates. The Sieve Algorithm in hardware requires a storage structure to track whether each number is prime, working alongside a counter to gradually mark composite numbers and find the next candidate.
+<br>
+<br>
+I also utilized a shift register design to handle the movement and updating of display data. To implement upward and downward scrolling effects on the LCD, I converted the calculated prime results into strings and stored them in a buffer. By shifting the data, I created a continuous update behavior for the display. Since FPGAs typically have more abundant registers compared to LUTs, this shift-based design effectively leverages the hardware's resource distribution characteristics.
 
 ## Labs
 

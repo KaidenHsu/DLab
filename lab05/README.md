@@ -1,9 +1,9 @@
 # Lab 5. Sieve Algorithm & Standard 1602 Character LCD Display
 
-Lab5 以 1602 LCD 為輸出，要求電路計算並依序展示質數序列，並能透過按鍵切換顯示方向與內容更新。LCD 驅動模組由 lab 提供，而我主要負責將 Sieve Algorithm 轉成可在 FPGA 上運作的循序電路，並設計控制流程讓計算結果能穩定地被整理與顯示。
+Lab 5 uses a 1602 LCD as the output device, requiring the circuit to calculate and sequentially display prime numbers while allowing users to toggle display direction and content updates via buttons. While the LCD driver module was provided, I was primarily responsible for converting the Sieve Algorithm into a sequential circuit capable of running on an FPGA and designing the control flow to ensure calculation results were properly organized and displayed.
 <br>
 <br>
-我學到將演算法改寫成硬體時，為了確保組合邏輯能在一個 cycle 內完成、避免 timing violation，需要把原本在軟體中一次完成的流程拆成多個 clock 週期逐步執行，並透過 FSM 來安排計算順序與資料更新。Sieve Algorithm 在硬體中必須使用暫存結構記錄每個數是否為質數，並配合計數器逐步標記合數與尋找下一個候選值，使整個運算流程能依序完成。
+I learned that when rewriting an algorithm for hardware, it is essential to split a process that would normally complete all at once in software into multiple clock cycles. This ensures that the combinational logic can finish within a single cycle to avoid timing violations, using an FSM to schedule the calculation sequence and data updates. The Sieve Algorithm in hardware requires a storage structure to track whether each number is prime, working alongside a counter to gradually mark composite numbers and find the next candidate.
 <br>
 <br>
-我也用到 shift register 的設計來處理顯示資料的移動與更新。為了在 LCD 上實作往上與往下的瀏覽效果，我將計算出的質數結果轉成字串後存入緩衝區，並透過位移的方式讓資料循序移動，形成連續更新的顯示行為。對於 register 相對 LUT 充裕的 FPGA 來說，這種以位移為主的設計能有效利用硬體資源配置的特性。
+I also utilized a shift register design to handle the movement and updating of display data. To implement upward and downward scrolling effects on the LCD, I converted the calculated prime results into strings and stored them in a buffer. By shifting the data, I created a continuous update behavior for the display. Since FPGAs typically have more abundant registers compared to LUTs, this shift-based design effectively leverages the hardware's resource distribution characteristics.

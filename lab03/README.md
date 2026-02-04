@@ -1,11 +1,11 @@
 # Lab 3. Simple I/O Control Circuit
 
-Lab3 以車燈與方向燈效果為主題，整合按鍵輸入、亮度控制與 LED 顯示，設計一個具備多種操作模式的輸出系統。整體目標是透過時序邏輯與狀態控制，將使用者的輸入操作轉換成燈號反饋給使用者。
+Lab 3 centers on car lighting and turn signal effects, integrating button inputs, brightness control, and LED displays to design an output system with multiple operating modes. The primary objective is to use sequential logic and state control to transform user input operations into visual feedback via light signals.
 <br>
 <br>
-透過 lab3 ，我學到如何將不穩定的按鍵輸入轉換成 FPGA 可以安全使用的控制訊號，並理解在實際硬體系統中必須妥善處理按鍵彈跳(debouncing) 與長按問題。此外，我也學到利用計數器來表達時間概念，並以此產生亮度變化與具有節奏感的燈號效果，使系統在不同操作條件下仍能正常運作。
+Through Lab 3, I learned how to convert unstable button inputs into control signals that can be safely used by the FPGA. I gained an understanding of how physical hardware systems must properly handle debouncing and long-press issues. Furthermore, I learned to utilize counters to represent the concept of time, using them to generate brightness variations and rhythmic lighting effects, ensuring the system operates correctly under different conditions.
 <br>
 <br>
-另外，我也學到利用 PWM 來控制 LED 的亮度，以及透過位移與計數器控制來實作方向燈與特殊顯示模式。這種設計方式以時序邏輯，讓燈號依照時間順序變化，讓使用者能透過按鍵與FPGA互動。
+Additionally, I learned to implement Pulse Width Modulation (PWM) to control LED brightness, as well as using shift registers and counter controls to implement turn signals and special display modes. This design approach uses sequential logic to make the light signals change according to a specific timeline, allowing users to interact with the FPGA through buttons.
 
 <p align="center"><img src="/images/led.png" alt="led" width="480" /></p>

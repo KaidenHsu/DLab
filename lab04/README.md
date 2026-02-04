@@ -1,10 +1,11 @@
 # Lab 4. UART I/O Circuit
 
-Lab4 以 UART 通訊與電腦終端 (terminal) 溝通，讓使用者輸入兩個十進位數字，電路計算並回傳它們的 GCD (最大公因數) 結果。UART 模組由lab 提供，而我主要負責將原本的 GCD 遞迴函式改寫成可在硬體上執行的循序電路，並完成整體控制流程的設計與整合。
+Lab 4 focuses on communicating with a computer terminal via UART, allowing a user to input two decimal numbers for the circuit to calculate and return their Greatest Common Divisor (GCD). While the UART module was provided, my primary responsibility was rewriting the original recursive GCD function into a sequential circuit capable of running on hardware, as well as designing and integrating the overall control flow.
 <br>
 <br>
-透過這次經驗，我學到把軟體演算法轉成硬體時，需要重新思考控制流程與資料更新的方式。遞迴在硬體中不能直接照搬，所以我將 GCD 改成用暫存器保存中間值、每個 clock 週期更新一次的做法，並用 FSM 來決定何時接收輸入、何時開始運算、以及何時輸出結果。再使用UART 模組讓使用者能透過 PC 提供的虛擬 COM port 與 FPGA 進行互動。
+Through this experience, I learned that when translating software algorithms into hardware, one must rethink control flow and data update methods. Recursion cannot be directly mapped to hardware, so I modified the GCD logic to store intermediate values in registers that update every clock cycle. I implemented a Finite State Machine (FSM) to manage the timing for receiving inputs, starting computations, and outputting results. Additionally, I used the UART module to enable user interaction with the FPGA through a virtual COM port on a PC.
 <br>
 <br>
-另外，我也練習了驗證與除錯的方法。我用基礎的 SystemVerilog 撰寫 testbench 來模擬輸入字元與 Enter 的行為，確認字串轉數字、數字運算、以及輸出格式都符合預期。另外，在 FPGA 板上測試時，我使用 Vivado 的 ILA (Integrated Logic Analyzer) 觀察關鍵暫存器與狀態變化，快速找出問題的起源。透過這個 lab 的經驗，我更熟悉「先用模擬縮小問題範圍，再用 ILA 驗證硬體實際行為」的除錯流程。
+Furthermore, I practiced verification and debugging methodologies. I wrote a testbench using basic SystemVerilog to simulate input characters and Enter key behavior, ensuring that string-to-integer conversion, numerical operations, and output formatting met expectations. During on-board testing, I utilized Vivado Integrated Logic Analyzer (ILA) to observe critical registers and state transitions, which allowed me to quickly pinpoint the source of issues. This lab familiarized me with the debugging workflow of first narrowing down problems via simulation and then verifying actual hardware behavior with ILA.
+
 <p align="center"><img src="/images/gcd.png" alt="gcd calculation" width="720" /></p>

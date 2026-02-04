@@ -1,11 +1,14 @@
 # Lab 10. VGA Video Interface Circuit
 
-在 DLab Lab10 中，本實驗以 VGA 顯示為主軸，介紹綠幕 (green screen) 移除這種在電影與圖片後製中常見的技巧，並實作其對應的硬體架構。若系統採用 CPU 逐一計算每個 pixel 的 RGB 值，會對處理器造成極大的負擔，因此在實際的 SoC 中，這類影像處理 (video processing) 重複性工作多半交由專門的硬體加速器來完成，本實驗便要求設計硬體達成圖片的疊合與顯示。
+In DLab Lab 10, the experiment focuses on VGA display, introducing the green screen removal technique commonly used in film and photo post-production, and implementing its corresponding hardware architecture. If a system relies on a CPU to calculate the RGB values for every pixel sequentially, it places an immense burden on the processor. Therefore, in actual SoC designs, repetitive tasks like video processing are typically offloaded to dedicated hardware accelerators. This lab required designing hardware to handle image overlay and display.
 <br>
 <br>
-在系統架構上，實驗提供 VGA controller，其輸入為高頻時脈，因此需透過 clock divider 產生適合顯示用的時脈，接著我進一步理解 VSYNC、HSYNC 與 RGB 輸出等 VGA 訊號在掃描顯示中的功能。此外，實驗也介紹了 retrace 與 cycle stealing 的觀念，說明如何在畫面回掃期間存取記憶體，避免影像讀取與顯示產生衝突，讓整體資料流 (datapath) 能在有限頻寬 (bandwidth) 下順利運作。
+Regarding system architecture, the lab provides a VGA controller. Since its input is a high-frequency clock, a clock divider must be used to generate a suitable display clock. I furthered my understanding of how VGA signals, such as VSYNC, HSYNC, and RGB outputs, function during the scanning and display process. Additionally, the experiment introduced the concepts of retrace and cycle stealing, explaining how to access memory during the blanking intervals to avoid conflicts between image reading and display, ensuring the datapath operates smoothly within the limited bandwidth.
 <br>
 <br>
-加上煙火特效則是此次 lab 的另一個重要要求。我需要自行在網路上尋找煙火 GIF，轉換成 PPM，再以 lab 給的 script 產生 24-bit RGB 資料。設計時需注意背景、月亮與煙火三個圖層的顯示先後順序，才能呈現正確的前後景效果。考量到 ZedBoard 上 BRAM 資源有限，我對煙火動畫的解析度與影格率進行了調整。本實驗沒有設計 FSM 。因為在 1 個 cycle 內需要同時取得多個圖層的像素資料，我為三個圖層各配置了一個 SRAM ，方便平行讀取資料。最後成功看到月亮與煙火在螢幕上動起來時，我覺得非常有成就感，這也為 DLab 的最後一個 lab 畫下完美的句點。
+Adding firework special effects was another key requirement of this lab. I had to find a firework GIF online, convert it to PPM format, and use the provided script to generate 24-bit RGB data. During the design phase, I had to carefully manage the rendering order of the background, moon, and fireworks layers to ensure the correct foreground and background effects.
+<br>
+<br>
+Given the limited BRAM resources on the ZedBoard, I adjusted the resolution and frame rate of the firework animation. This lab did not utilize an FSM; since it was necessary to retrieve pixel data from multiple layers simultaneously within a single cycle, I allocated a separate SRAM for each of the three layers to facilitate parallel data reading. Seeing the moon and fireworks successfully animated on the screen was incredibly rewarding, marking a perfect conclusion to the final lab of DLab.
 
 <p align="center"><img src="/images/vga_fireworks.png" alt="vga vireworks" width="600" /></p>

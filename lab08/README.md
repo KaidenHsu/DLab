@@ -1,12 +1,14 @@
 # Lab 8. MD5 Password Cracking Circuit
 
-Lab8 為破解 MD5 雜湊 (hashing) ，目標是在已知輸入範圍的前提下，透過軟硬體協同設計 (software-hardware co-design) 把密碼搜尋流程做成可在 FPGA 上運作的解碼電路，並將破解結果與耗時顯示在 LCD 上。範例的 C 程式提供了 MD5 計算流程與測試用的雜湊值，作為硬體實作時對照正確性的依據。
-在軟硬體協同設計的優化上，我利用輸入固定為 8 位數字、訊息格式固定的特性，簡化了硬體的前處理流程。原本在軟體中需要通用處理的 padding 與訊息組合，在硬體中被縮減為少量必要的資料生成，其餘部分直接視為常數或 0，降低資料路徑與控制複雜度。同時，因為密碼僅包含數字字元，我直接在硬體中完成二進位到十進位字串的轉換，避免導入不必要的通用字串處理邏輯，使整體設計更容易滿足時序與資源限制。
+Lab 8 involves cracking MD5 hashing. Given a known input range, the goal is to use software-hardware co-design to implement a password search process as a decoding circuit on the FPGA, displaying the cracked results and elapsed time on the LCD. The example C program provided the MD5 calculation flow and test hash values, serving as a golden reference for verifying hardware correctness.
 <br>
 <br>
-我也特別處理了 C code 與 Verilog 在 endianness（位元組順序）上的差異：軟體端常以 little-endian 的記憶體排列來解讀 32-bit word，但硬體描述時若直接用 bit-slicing 與 concatenation，結果往往會與軟體輸出不一致。因此我在硬體端明確進行 byte-level 的重排，確保雜湊結果在比較時能與 C 端的 golden 完全對齊。為了確保組合邏輯能在一個 cycle 內完成、避免 timing violation，我將 MD5 主要迴圈的運算拆成多個 clock 週期逐步執行，讓每個階段的臨界路徑 (critical path) 都維持在可接受的範圍內。
+In optimizing the software-hardware co-design, I leveraged the characteristic that inputs are fixed 8-digit numbers with a consistent message format to simplify the hardware pre-processing. The padding and message composition, which require general-purpose handling in software, were reduced to generating only the necessary data in hardware, with the rest treated as constants or zeros. This reduced the complexity of the datapath and control logic. Additionally, since the passwords consist only of numeric characters, I performed the binary-to-decimal string conversion directly in hardware to avoid unnecessary general string processing, making the design easier to meet timing and resource constraints.
 <br>
 <br>
-此外，我設計了 rkRAM 來集中管理每一輪所需的旋轉量 (rotation amount: r table) 與常數 (k table)，並以循序輪替的方式輸出目前輪次的參數，讓多個運算核心能同步使用相同的設定而不需重複放置常數表。最後在效能上，我使用 10 個 MD5 模組平行解碼，將搜尋空間分段同時掃描，以吞吐量 (throughput) 換取整體破解時間的縮短，並在任一 MD5 模組找到結果後即停止其餘運算，避免不必要的資源浪費。
+I specifically addressed the difference in endianness between C code and Verilog. While software often interprets 32-bit words using little-endian memory arrangement, hardware bit-slicing and concatenation can lead to inconsistencies. Therefore, I explicitly performed byte-level reordering in hardware to ensure the hash results aligned perfectly with the golden values from the C environment. To ensure the combinational logic could complete within one cycle and avoid timing violations, I broke the main MD5 loop operations into multiple clock cycles, keeping the critical path of each stage within an acceptable range.
+<br>
+<br>
+Furthermore, I designed an rkRAM to centrally manage the rotation amounts (r table) and constants (k table) required for each round. By outputting parameters for the current round in a sequential, rotating manner, multiple computation cores could synchronize their settings without duplicating constant tables. Regarding performance, I used 10 parallel MD5 modules to scan segments of the search space simultaneously, trading throughput for a reduction in total cracking time. Once any MD5 module finds a result, all other operations are halted to avoid wasting resources.
 
 <p align="center"><img src="/images/MD5_cracker.jpg" alt="MD5_cracker" width="480" /></p>
