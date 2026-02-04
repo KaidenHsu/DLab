@@ -24,14 +24,14 @@ DLab 為一堂國立陽明交通大學 (NYCU) 開設，以實作為核心的數�
 [Lab9][9]|Correlation Filter Circuit
 [Lab10][10]|VGA Video Interface Circuit
 
-[1]: lab01/
-[2]: lab02/
-[3]: lab03/
-[4]: lab04/
-[5]: lab05/
-[7]: lab07/
-[8]: lab08/
-[9]: lab09/
-[10]: lab10/
+[1]: lab01/README.zh-tw.md
+[2]: lab02/README.zh-tw.md
+[3]: lab03/README.zh-tw.md
+[4]: lab04/README.zh-tw.md
+[5]: lab05/README.zh-tw.md
+[7]: lab07/README.zh-tw.md
+[8]: lab08/README.zh-tw.md
+[9]: lab09/README.zh-tw.md
+[10]: lab10/README.zh-tw.md
 
 <p align="center"><img src="images/zedboard.png" alt="Zedboard" width="480" /></p>

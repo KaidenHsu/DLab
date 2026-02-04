@@ -1,0 +1,5 @@
+# Lab 1. Sequential Binary Multiplier
+
+Lab1 為實作一循序二元成法器。我利用 counter 來控制一個乘法器的運作流程。設計分成 controller 與 datapath。在這個 lab 中我並沒有實際設計完整的 FSM，而是依賴 counter 與條件判斷來決定 load、add 與 shift 等控制訊號。透過 lab1，我理解到即使不使用複雜的 FSM，也可以用 counter 來控制簡單的邏輯，並將演算法轉換成可執行的時序電路。這個 lab 幫助我建立了從演算法思考到 RTL 實作的基礎概念，也讓我更熟悉循序邏輯與控制訊號之間的關係。
+
+<p align="center"><img src="/images/shift_multiplier.jpg" alt="shift multiplier" width="720" /></p>
