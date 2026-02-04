@@ -2,13 +2,16 @@
 
 [![zh-tw](https://img.shields.io/badge/lang-繁體中文-blue.svg)](README.zh-tw.md)
 
-DLab 為一堂國立陽明交通大學 (NYCU) 開設，以實作為核心的數位系統設計 (digital design) 課程。每個 lab 都要求參與者獨立完成 RTL 與對應的 testbench，包括從規格理解 (specs) 、設計實作 (design) 到功能驗證 (verification)。我在課程中使用的開發板是 Digilent ZedBoard，搭載 Zynq-7000，一款結合 ARM Cortex-A9 與 FPGA 的 SoC 平台 (本實驗只使用 PL 部分)，並搭配 AMD Xilinx Vivado 進行設計與驗證。
+This is an advanced course on the Introduction to Digital Systems offered by **National Yang Ming Chiao Tung University (NYCU)**. The course **balances theory with practical application**, featuring **16 design examples** across the 4th and 7th chapters. Moving beyond basic digital logic theory, the course develops professional design principles. I utilized the **AMD Xilinx Zedboard FPGA** as the implementation platform, navigating the entire FPGA design flow from writing RTL and performing simulation and debugging with ILA in Vivado to 1 hardware configuration, thereby gaining comprehensive familiarity with the FPGA development environment.
 <br>
 <br>
-整個學期共完成 10 個 lab，內容涵蓋 Verilog RTL 撰寫、FSM 設計、資料路徑 (datapath) 與控制邏輯 (controller) 規劃、記憶體 (SRAM) 與周邊模組整合，以及完整 testbench 的撰寫與驗證流程建立。從一開始單純的行為描述，到後來需要依照 spec 思考架構選擇、資源使用 (utilization) 與時序限制 (timing)，逐步培養將抽象需求轉換為可合成 (synthesize) 電路的能力。在驗證 (verification) 方面，除了透過模擬檢查功能正確性，我也學會在板上實測時搭配 Vivado ILA (Integrated Logic Analyzer) 觀察內部訊號，協助除錯與理解實際硬體行為。
+Regarding the theoretical component, the 1st chapter serves as a review of core digital systems concepts while introducing critical real-world design issues such as hazards and timing. Chapters 2 and 8 cover Verilog syntax; despite having a prior foundation, I used this opportunity to refine my coding style to ensure the synthesized hardware accurately reflects the intended logic. Chapter 3 introduces the classification and evolution of Programmable Logic Devices, tracing the path from ROM, PAL, PLA, and CPLD to the FPGA platforms used today. Chapter 5 explores design methodologies beyond standard finite state machines, including state machine charts and microprogramming, concluding with linked state machines to facilitate the design of complex system controllers. Finally, chapter 6 provides an in-depth explanation of internal FPGA architecture and fundamental EDA tool concepts, offering a concrete understanding of how hardware is physically realized.
 <br>
 <br>
-經過 DLab 的訓練，我在數位設計上的能力有明顯成長，能依據題目規格思考整體架構，並針對效能、功耗與面積 (PPA) 進行取捨與優化。實際將設計下載到 FPGA 上運作，也讓我體會到模擬與真實電路之間仍會受到電性與物理因素影響，能親眼看到電路在硬體上實際成功運作給我帶來很大的成就感。這堂課讓我在 RTL coding 與 testbench 撰寫能力上都有顯著進步，並對 FPGA 上完整的數位系統設計與驗證流程建立了更紮實的理解。
+The practical core of the course is found in chapters 4 and 7. Chapter 4 provides 12 design examples that progress from simple to complex, covering various combinational and sequential circuit design techniques. In the context of the current AI era, chapter 7 introduces the hardware design of floating-point arithmetic units for addition, subtraction, multiplication, and division, providing insight into how these numerical computations are actually implemented in hardware.
+<br>
+<br>
+Completing this course has rounded out my understanding of digital design and laid a robust foundation for future hardware design and system development. When writing RTL, I no longer view it as mere code but can visualize the actual synthesized hardware structures. Simultaneously, I have gained a profound realization of the various digital design theories covered throughout the course.
 
 ## Labs
 
