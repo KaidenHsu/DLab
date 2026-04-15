@@ -22,4 +22,5 @@ module mul8(
         .load_o(load), .add_o(add), .shift_o(shift),
         .done(done)
     );
+
 endmodule
