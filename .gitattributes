@@ -1,0 +1,13 @@
+# Vivado generated directories
+*.runs/** linguist-generated=true
+*.cache/** linguist-generated=true
+*.hw/** linguist-generated=true
+*.sim/** linguist-generated=true
+*.ip_user_files/** linguist-generated=true
+*.gen/** linguist-generated=true
+.Xil/** linguist-generated=true
+
+# Vivado log and journal files
+*.jou linguist-generated=true
+*.log linguist-generated=true
+*.str linguist-generated=true

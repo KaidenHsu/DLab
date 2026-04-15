@@ -1,0 +1,12 @@
++====================+===================+====================+
+| Launch Setup Clock | Launch Hold Clock | Pin                |
++====================+===================+====================+
+| sys_clk_pin        | sys_clk_pin       | gcd_seq/b_reg[9]/D |
+| sys_clk_pin        | sys_clk_pin       | gcd_seq/b_reg[7]/D |
+| sys_clk_pin        | sys_clk_pin       | gcd_seq/b_reg[8]/D |
+| sys_clk_pin        | sys_clk_pin       | gcd_seq/b_reg[5]/D |
+| sys_clk_pin        | sys_clk_pin       | gcd_seq/b_reg[3]/D |
+| sys_clk_pin        | sys_clk_pin       | gcd_seq/b_reg[1]/D |
+| sys_clk_pin        | sys_clk_pin       | gcd_seq/b_reg[2]/D |
+| sys_clk_pin        | sys_clk_pin       | gcd_seq/b_reg[0]/D |
++--------------------+-------------------+--------------------+

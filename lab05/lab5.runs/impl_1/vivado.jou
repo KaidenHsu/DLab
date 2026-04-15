@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1.1 (64-bit)
+# SW Build 6233196 on Thu Sep 11 21:27:30 MDT 2025
+# IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+# SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+# Start of session at: Thu Jan  1 01:57:01 2026
+# Process ID         : 74696
+# Current directory  : C:/Users/ryanh/fpga/dlab/lab5/lab5.runs/impl_1
+# Command line       : vivado.exe -log lab5.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab5.tcl -notrace
+# Log file           : C:/Users/ryanh/fpga/dlab/lab5/lab5.runs/impl_1/lab5.vdi
+# Journal file       : C:/Users/ryanh/fpga/dlab/lab5/lab5.runs/impl_1\vivado.jou
+# Running On         : kaiden
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 258V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 33810 MB
+# Swap memory        : 12860 MB
+# Total Virtual      : 46670 MB
+# Available Virtual  : 10287 MB
+#-----------------------------------------------------------
+source lab5.tcl -notrace

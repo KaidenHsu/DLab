@@ -1,0 +1,7 @@
+Running: xsim.dir/golf_headlights_baseball_bat_behav/xsimk.exe -simmode gui -wdb golf_headlights_baseball_bat_behav.wdb -simrunnum 0 -socket 63663
+Design successfully loaded
+Design Loading Memory Usage: 10856 KB (Peak: 10856 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 12068 KB (Peak: 12068 KB)
+Simulation CPU Usage: 139 ms

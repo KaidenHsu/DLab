@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1.1 (64-bit)
+# SW Build 6233196 on Thu Sep 11 21:27:30 MDT 2025
+# IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+# SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+# Start of session at: Thu Dec 11 23:21:20 2025
+# Process ID         : 24200
+# Current directory  : C:/Users/ryanh/fpga/dlab/lab4/lab4.runs/synth_1
+# Command line       : vivado.exe -log gcd_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gcd_wrapper.tcl
+# Log file           : C:/Users/ryanh/fpga/dlab/lab4/lab4.runs/synth_1/gcd_wrapper.vds
+# Journal file       : C:/Users/ryanh/fpga/dlab/lab4/lab4.runs/synth_1\vivado.jou
+# Running On         : kaiden
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 258V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 33810 MB
+# Swap memory        : 6174 MB
+# Total Virtual      : 39984 MB
+# Available Virtual  : 14338 MB
+#-----------------------------------------------------------
+source gcd_wrapper.tcl -notrace

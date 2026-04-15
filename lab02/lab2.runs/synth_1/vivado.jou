@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1.1 (64-bit)
+# SW Build 6233196 on Thu Sep 11 21:27:30 MDT 2025
+# IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+# SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+# Start of session at: Tue Nov 18 01:06:50 2025
+# Process ID         : 11740
+# Current directory  : C:/Users/ryanh/fpga/labs/lab2/lab2.runs/synth_1
+# Command line       : vivado.exe -log mmult.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mmult.tcl
+# Log file           : C:/Users/ryanh/fpga/labs/lab2/lab2.runs/synth_1/mmult.vds
+# Journal file       : C:/Users/ryanh/fpga/labs/lab2/lab2.runs/synth_1\vivado.jou
+# Running On         : kaiden
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 258V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 33810 MB
+# Swap memory        : 2818 MB
+# Total Virtual      : 36628 MB
+# Available Virtual  : 17109 MB
+#-----------------------------------------------------------
+source mmult.tcl -notrace

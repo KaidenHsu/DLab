@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+All test cases passed!
+Average cycle =           9
+$finish called at time : 2570 ns : File "C:/Users/ryanh/fpga/labs/lab1/lab1.srcs/sim_1/new/mul8_tb.v" Line 110

@@ -1,0 +1,260 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1.1 (win64) Build 6233196 Thu Sep 11 21:27:30 MDT 2025
+| Date         : Mon Jan  5 11:37:14 2026
+| Host         : kaiden running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab8_control_sets_placed.rpt
+| Design       : lab8
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   182 |
+|    Minimum number of control sets                        |   182 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   452 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   182 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |   100 |
+| >= 6 to < 8        |    11 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    71 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              59 |           22 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             415 |          228 |
+| Yes          | No                    | No                     |             156 |           53 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            6614 |         1756 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                       Enable Signal                      |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | lcd0/tcode[3]_i_1_n_0                                    |                                        |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | genloop[4].md5/passwd_bin2dec_str/p_1_in                 | rkRAM/counter[0]                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | genloop[7].md5/passwd_bin2dec_str/p_1_in                 | rkRAM/counter[0]                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | lcd0/icode[3]_i_1_n_0                                    |                                        |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | timer_bin2dec_str/p_1_in                                 | rkRAM/counter[0]                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | genloop[3].md5/passwd_bin2dec_str/p_1_in                 | rkRAM/counter[0]                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | genloop[6].md5/passwd_bin2dec_str/p_1_in                 | rkRAM/counter[0]                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | genloop[2].md5/passwd_bin2dec_str/p_1_in                 | rkRAM/counter[0]                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | genloop[0].md5/passwd_bin2dec_str/p_1_in                 | rkRAM/counter[0]                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | genloop[9].md5/passwd_bin2dec_str/p_1_in                 | rkRAM/counter[0]                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | genloop[1].md5/passwd_bin2dec_str/p_1_in                 | rkRAM/counter[0]                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | genloop[5].md5/passwd_bin2dec_str/p_1_in                 | rkRAM/counter[0]                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | genloop[8].md5/passwd_bin2dec_str/p_1_in                 | rkRAM/counter[0]                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | timer_bin2dec_str/dec_str[13]_i_1__9_n_0                 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | timer_bin2dec_str/dec_str[29]_i_1__9_n_0                 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | timer_bin2dec_str/dec_str[37]_i_1__9_n_0                 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | timer_bin2dec_str/dec_str[5]_i_1__9_n_0                  | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[8].md5/passwd_bin2dec_str/dec_str[53]_i_1__7_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[8].md5/passwd_bin2dec_str/dec_str[45]_i_1__7_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[8].md5/passwd_bin2dec_str/dec_str[29]_i_1__7_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[8].md5/passwd_bin2dec_str/dec_str[21]_i_1__7_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[7].md5/passwd_bin2dec_str/dec_str[61]_i_1__6_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[7].md5/passwd_bin2dec_str/dec_str[37]_i_1__6_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[7].md5/passwd_bin2dec_str/dec_str[29]_i_1__6_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[7].md5/passwd_bin2dec_str/dec_str[13]_i_1__6_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[1].md5/passwd_bin2dec_str/dec_str[29]_i_1__0_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[7].md5/passwd_bin2dec_str/dec_str[5]_i_1__6_n_0  | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[4].md5/passwd_bin2dec_str/dec_str[21]_i_1__3_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[4].md5/passwd_bin2dec_str/dec_str[37]_i_1__3_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[4].md5/passwd_bin2dec_str/dec_str[13]_i_1__3_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[4].md5/passwd_bin2dec_str/dec_str[53]_i_1__3_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[4].md5/passwd_bin2dec_str/dec_str[45]_i_1__3_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[4].md5/passwd_bin2dec_str/dec_str[29]_i_1__3_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[4].md5/passwd_bin2dec_str/dec_str[5]_i_1__3_n_0  | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[4].md5/passwd_bin2dec_str/dec_str[61]_i_1__3_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[7].md5/passwd_bin2dec_str/dec_str[53]_i_1__6_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[7].md5/passwd_bin2dec_str/dec_str[45]_i_1__6_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[5].md5/passwd_bin2dec_str/dec_str[29]_i_1__4_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[7].md5/passwd_bin2dec_str/dec_str[21]_i_1__6_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[3].md5/passwd_bin2dec_str/dec_str[29]_i_1__2_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[3].md5/passwd_bin2dec_str/dec_str[37]_i_1__2_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[3].md5/passwd_bin2dec_str/dec_str[13]_i_1__2_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[3].md5/passwd_bin2dec_str/dec_str[45]_i_1__2_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[3].md5/passwd_bin2dec_str/dec_str[53]_i_1__2_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[3].md5/passwd_bin2dec_str/dec_str[5]_i_1__2_n_0  | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[3].md5/passwd_bin2dec_str/dec_str[21]_i_1__2_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[6].md5/passwd_bin2dec_str/dec_str[37]_i_1__5_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[6].md5/passwd_bin2dec_str/dec_str[5]_i_1__5_n_0  | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[2].md5/passwd_bin2dec_str/dec_str[13]_i_1__1_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[2].md5/passwd_bin2dec_str/dec_str[53]_i_1__1_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[2].md5/passwd_bin2dec_str/dec_str[29]_i_1__1_n_0 | rkRAM/counter[0]                       |                4 |              5 |         1.25 |
+|  clk_IBUF_BUFG | genloop[2].md5/passwd_bin2dec_str/dec_str[45]_i_1__1_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[2].md5/passwd_bin2dec_str/dec_str[37]_i_1__1_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[2].md5/passwd_bin2dec_str/dec_str[21]_i_1__1_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[2].md5/passwd_bin2dec_str/dec_str[5]_i_1__1_n_0  | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[3].md5/passwd_bin2dec_str/dec_str[61]_i_1__2_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[2].md5/passwd_bin2dec_str/dec_str[61]_i_1__1_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[6].md5/passwd_bin2dec_str/dec_str[21]_i_1__5_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[6].md5/passwd_bin2dec_str/dec_str[13]_i_1__5_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[6].md5/passwd_bin2dec_str/dec_str[61]_i_1__5_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[6].md5/passwd_bin2dec_str/dec_str[45]_i_1__5_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[6].md5/passwd_bin2dec_str/dec_str[29]_i_1__5_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[6].md5/passwd_bin2dec_str/dec_str[53]_i_1__5_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[1].md5/passwd_bin2dec_str/dec_str[61]_i_1__0_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[1].md5/passwd_bin2dec_str/dec_str[37]_i_1__0_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[1].md5/passwd_bin2dec_str/dec_str[45]_i_1__0_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[5].md5/passwd_bin2dec_str/dec_str[21]_i_1__4_n_0 | rkRAM/counter[0]                       |                5 |              5 |         1.00 |
+|  clk_IBUF_BUFG | genloop[0].md5/passwd_bin2dec_str/dec_str[37]_i_1_n_0    | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[0].md5/passwd_bin2dec_str/dec_str[45]_i_1_n_0    | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[0].md5/passwd_bin2dec_str/dec_str[53]_i_1_n_0    | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[0].md5/passwd_bin2dec_str/dec_str[21]_i_1_n_0    | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[0].md5/passwd_bin2dec_str/dec_str[13]_i_1_n_0    | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[0].md5/passwd_bin2dec_str/dec_str[29]_i_1_n_0    | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[0].md5/passwd_bin2dec_str/dec_str[5]_i_1_n_0     | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[8].md5/passwd_bin2dec_str/dec_str[37]_i_1__7_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[8].md5/passwd_bin2dec_str/dec_str[13]_i_1__7_n_0 | rkRAM/counter[0]                       |                4 |              5 |         1.25 |
+|  clk_IBUF_BUFG | genloop[1].md5/passwd_bin2dec_str/dec_str[21]_i_1__0_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[1].md5/passwd_bin2dec_str/dec_str[5]_i_1__0_n_0  | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[1].md5/passwd_bin2dec_str/dec_str[53]_i_1__0_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[1].md5/passwd_bin2dec_str/dec_str[13]_i_1__0_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | timer_bin2dec_str/dec_str[21]_i_1__9_n_0                 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | timer_bin2dec_str/dec_str[45]_i_1__9_n_0                 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[5].md5/passwd_bin2dec_str/dec_str[61]_i_1__4_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[5].md5/passwd_bin2dec_str/dec_str[5]_i_1__4_n_0  | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[5].md5/passwd_bin2dec_str/dec_str[53]_i_1__4_n_0 | rkRAM/counter[0]                       |                4 |              5 |         1.25 |
+|  clk_IBUF_BUFG | genloop[5].md5/passwd_bin2dec_str/dec_str[45]_i_1__4_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[5].md5/passwd_bin2dec_str/dec_str[13]_i_1__4_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[0].md5/passwd_bin2dec_str/dec_str[61]_i_1_n_0    | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[8].md5/passwd_bin2dec_str/dec_str[5]_i_1__7_n_0  | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[8].md5/passwd_bin2dec_str/dec_str[61]_i_1__7_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | timer_bin2dec_str/dec_str[53]_i_1__9_n_0                 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[9].md5/passwd_bin2dec_str/dec_str[37]_i_1__8_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[9].md5/passwd_bin2dec_str/dec_str[13]_i_1__8_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[9].md5/passwd_bin2dec_str/dec_str[29]_i_1__8_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[9].md5/passwd_bin2dec_str/dec_str[45]_i_1__8_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[9].md5/passwd_bin2dec_str/dec_str[53]_i_1__8_n_0 | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[9].md5/passwd_bin2dec_str/dec_str[21]_i_1__8_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[9].md5/passwd_bin2dec_str/dec_str[61]_i_1__8_n_0 | rkRAM/counter[0]                       |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | genloop[9].md5/passwd_bin2dec_str/dec_str[5]_i_1__8_n_0  | rkRAM/counter[0]                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | genloop[5].md5/passwd_bin2dec_str/dec_str[37]_i_1__4_n_0 | rkRAM/counter[0]                       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | genloop[3].md5/main_loop_counter                         | rkRAM/counter[0]                       |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | genloop[0].md5/main_loop_counter                         | rkRAM/counter[0]                       |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | genloop[5].md5/main_loop_counter                         | rkRAM/counter[0]                       |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | genloop[6].md5/main_loop_counter                         | rkRAM/counter[0]                       |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG | genloop[7].md5/main_loop_counter                         | rkRAM/counter[0]                       |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | genloop[2].md5/main_loop_counter                         | rkRAM/counter[0]                       |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | genloop[1].md5/main_loop_counter                         | rkRAM/counter[0]                       |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | genloop[4].md5/main_loop_counter                         | rkRAM/counter[0]                       |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | genloop[8].md5/main_loop_counter                         | rkRAM/counter[0]                       |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | genloop[9].md5/main_loop_counter                         | rkRAM/counter[0]                       |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0                             | rkRAM/counter[0]                       |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG |                                                          | genblk1[3].u_db/FSM_sequential_S_reg_0 |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG | timer[23]_i_2_n_0                                        | genblk1[3].u_db/SR[0]                  |                4 |             24 |         6.00 |
+|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0                             | lcd0/text_count[0]_i_1_n_0             |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG | genloop[2].md5/current_passwd                            | rkRAM/counter[0]                       |                8 |             27 |         3.38 |
+|  clk_IBUF_BUFG | genloop[5].md5/current_passwd                            | rkRAM/counter[0]                       |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG | genloop[4].md5/current_passwd                            | rkRAM/counter[0]                       |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG | genloop[0].md5/current_passwd                            | rkRAM/counter[0]                       |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG | genloop[1].md5/current_passwd                            | rkRAM/counter[0]                       |                8 |             27 |         3.38 |
+|  clk_IBUF_BUFG | genloop[8].md5/current_passwd                            | rkRAM/counter[0]                       |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG | genloop[3].md5/current_passwd                            | rkRAM/counter[0]                       |                8 |             27 |         3.38 |
+|  clk_IBUF_BUFG | genloop[6].md5/current_passwd                            | rkRAM/counter[0]                       |                5 |             27 |         5.40 |
+|  clk_IBUF_BUFG | genloop[7].md5/current_passwd                            | rkRAM/counter[0]                       |                6 |             27 |         4.50 |
+|  clk_IBUF_BUFG | genloop[9].md5/current_passwd                            | rkRAM/counter[0]                       |                5 |             27 |         5.40 |
+|  clk_IBUF_BUFG | genloop[9].md5/rotate_left_buf[8]                        | rkRAM/counter[0]                       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | genloop[2].md5/rotate_left_buf[8]                        | rkRAM/counter[0]                       |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | genloop[4].md5/rotate_left_buf[8]                        | rkRAM/counter[0]                       |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | genloop[3].md5/rotate_left_buf[8]                        | rkRAM/counter[0]                       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | genloop[5].md5/rotate_left_buf[8]                        | rkRAM/counter[0]                       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | genloop[8].md5/rotate_left_buf[8]                        | rkRAM/counter[0]                       |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | genloop[7].md5/rotate_left_buf[8]                        | rkRAM/counter[0]                       |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG | genloop[6].md5/rotate_left_buf[8]                        | rkRAM/counter[0]                       |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | lcd0/init_e_i_1_n_0                                      | rkRAM/counter[0]                       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | genloop[0].md5/rotate_left_buf[8]                        | rkRAM/counter[0]                       |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | genloop[1].md5/rotate_left_buf[8]                        | rkRAM/counter[0]                       |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | genloop[1].md5/f[31]_i_1__0_n_0                          | rkRAM/counter[0]                       |               17 |             36 |         2.12 |
+|  clk_IBUF_BUFG | genloop[4].md5/f[31]_i_1__3_n_0                          | rkRAM/counter[0]                       |               14 |             36 |         2.57 |
+|  clk_IBUF_BUFG | genloop[5].md5/f[31]_i_1__4_n_0                          | rkRAM/counter[0]                       |               12 |             36 |         3.00 |
+|  clk_IBUF_BUFG | genloop[2].md5/f[31]_i_1__1_n_0                          | rkRAM/counter[0]                       |               15 |             36 |         2.40 |
+|  clk_IBUF_BUFG | genloop[6].md5/f[31]_i_1__5_n_0                          | rkRAM/counter[0]                       |               15 |             36 |         2.40 |
+|  clk_IBUF_BUFG | genloop[3].md5/f[31]_i_1__2_n_0                          | rkRAM/counter[0]                       |               15 |             36 |         2.40 |
+|  clk_IBUF_BUFG | genloop[8].md5/f[31]_i_1__7_n_0                          | rkRAM/counter[0]                       |               16 |             36 |         2.25 |
+|  clk_IBUF_BUFG | genloop[9].md5/f[31]_i_1__8_n_0                          | rkRAM/counter[0]                       |               16 |             36 |         2.25 |
+|  clk_IBUF_BUFG | genloop[0].md5/f[31]_i_1_n_0                             | rkRAM/counter[0]                       |               13 |             36 |         2.77 |
+|  clk_IBUF_BUFG | genloop[7].md5/f[31]_i_1__6_n_0                          | rkRAM/counter[0]                       |               15 |             36 |         2.40 |
+|  clk_IBUF_BUFG | genloop[6].md5/passwd_bin2dec_str/E[0]                   | rkRAM/counter[0]                       |               18 |             40 |         2.22 |
+|  clk_IBUF_BUFG | genloop[1].md5/passwd_bin2dec_str/E[0]                   | rkRAM/counter[0]                       |               17 |             40 |         2.35 |
+|  clk_IBUF_BUFG | genloop[2].md5/passwd_bin2dec_str/E[0]                   | rkRAM/counter[0]                       |               21 |             40 |         1.90 |
+|  clk_IBUF_BUFG | genloop[3].md5/passwd_bin2dec_str/E[0]                   | rkRAM/counter[0]                       |               16 |             40 |         2.50 |
+|  clk_IBUF_BUFG | genloop[7].md5/passwd_bin2dec_str/E[0]                   | rkRAM/counter[0]                       |               19 |             40 |         2.11 |
+|  clk_IBUF_BUFG | genloop[8].md5/passwd_bin2dec_str/E[0]                   | rkRAM/counter[0]                       |               17 |             40 |         2.35 |
+|  clk_IBUF_BUFG | genloop[0].md5/passwd_bin2dec_str/E[0]                   | rkRAM/counter[0]                       |               17 |             40 |         2.35 |
+|  clk_IBUF_BUFG | genloop[4].md5/passwd_bin2dec_str/E[0]                   | rkRAM/counter[0]                       |               14 |             40 |         2.86 |
+|  clk_IBUF_BUFG | genloop[4].md5/E[0]                                      | rkRAM/counter[0]                       |               18 |             40 |         2.22 |
+|  clk_IBUF_BUFG | genloop[5].md5/passwd_bin2dec_str/E[0]                   | rkRAM/counter[0]                       |               15 |             40 |         2.67 |
+|  clk_IBUF_BUFG | timer_bin2dec_str/row_B                                  |                                        |               17 |             40 |         2.35 |
+|  clk_IBUF_BUFG | genloop[9].md5/passwd_bin2dec_str/E[0]                   | rkRAM/counter[0]                       |               12 |             40 |         3.33 |
+|  clk_IBUF_BUFG | timer_bin2dec_str/row_B                                  | timer_bin2dec_str/counter_reg[1]_0     |               16 |             55 |         3.44 |
+|  clk_IBUF_BUFG |                                                          |                                        |               22 |             59 |         2.68 |
+|  clk_IBUF_BUFG | genloop[3].md5/a[31]_i_1__2_n_0                          | rkRAM/counter[0]                       |               20 |            128 |         6.40 |
+|  clk_IBUF_BUFG | genloop[8].md5/a[31]_i_1__7_n_0                          | rkRAM/counter[0]                       |               20 |            128 |         6.40 |
+|  clk_IBUF_BUFG | genloop[4].md5/hash                                      | rkRAM/counter[0]                       |               18 |            128 |         7.11 |
+|  clk_IBUF_BUFG | genloop[1].md5/a[31]_i_1__0_n_0                          | rkRAM/counter[0]                       |               21 |            128 |         6.10 |
+|  clk_IBUF_BUFG | genloop[1].md5/hash                                      | rkRAM/counter[0]                       |               18 |            128 |         7.11 |
+|  clk_IBUF_BUFG | genloop[5].md5/a[31]_i_1__4_n_0                          | rkRAM/counter[0]                       |               18 |            128 |         7.11 |
+|  clk_IBUF_BUFG | genloop[0].md5/hash                                      | rkRAM/counter[0]                       |               19 |            128 |         6.74 |
+|  clk_IBUF_BUFG | genloop[2].md5/a[31]_i_1__1_n_0                          | rkRAM/counter[0]                       |               20 |            128 |         6.40 |
+|  clk_IBUF_BUFG | genloop[6].md5/a[31]_i_1__5_n_0                          | rkRAM/counter[0]                       |               26 |            128 |         4.92 |
+|  clk_IBUF_BUFG | genloop[6].md5/hash                                      | rkRAM/counter[0]                       |               23 |            128 |         5.57 |
+|  clk_IBUF_BUFG | genloop[7].md5/hash                                      | rkRAM/counter[0]                       |               22 |            128 |         5.82 |
+|  clk_IBUF_BUFG | genloop[0].md5/a[31]_i_1_n_0                             | rkRAM/counter[0]                       |               18 |            128 |         7.11 |
+|  clk_IBUF_BUFG | genloop[7].md5/a[31]_i_1__6_n_0                          | rkRAM/counter[0]                       |               22 |            128 |         5.82 |
+|  clk_IBUF_BUFG | genloop[2].md5/hash                                      | rkRAM/counter[0]                       |               18 |            128 |         7.11 |
+|  clk_IBUF_BUFG | genloop[9].md5/a[31]_i_1__8_n_0                          | rkRAM/counter[0]                       |               21 |            128 |         6.10 |
+|  clk_IBUF_BUFG | genloop[4].md5/a[31]_i_1__3_n_0                          | rkRAM/counter[0]                       |               25 |            128 |         5.12 |
+|  clk_IBUF_BUFG | genloop[9].md5/hash                                      | rkRAM/counter[0]                       |               18 |            128 |         7.11 |
+|  clk_IBUF_BUFG | genloop[5].md5/hash                                      | rkRAM/counter[0]                       |               19 |            128 |         6.74 |
+|  clk_IBUF_BUFG | genloop[3].md5/hash                                      | rkRAM/counter[0]                       |               17 |            128 |         7.53 |
+|  clk_IBUF_BUFG | genloop[8].md5/hash                                      | rkRAM/counter[0]                       |               19 |            128 |         6.74 |
+|  clk_IBUF_BUFG | genloop[0].md5/Q[0]                                      |                                        |               33 |            216 |         6.55 |
+|  clk_IBUF_BUFG |                                                          | rkRAM/counter[0]                       |              223 |            398 |         1.78 |
+|  clk_IBUF_BUFG | genloop[0].md5/Q[0]                                      | rkRAM/counter[0]                       |              552 |           1982 |         3.59 |
++----------------+----------------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+
+

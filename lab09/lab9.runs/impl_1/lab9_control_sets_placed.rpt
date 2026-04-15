@@ -1,0 +1,93 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1.1 (win64) Build 6233196 Thu Sep 11 21:27:30 MDT 2025
+| Date         : Wed Jan  7 23:38:32 2026
+| Host         : kaiden running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab9_control_sets_placed.rpt
+| Design       : lab9
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    15 |
+|    Minimum number of control sets                        |    15 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    56 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    15 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              33 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              30 |           12 |
+| Yes          | No                    | No                     |               9 |            5 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1232 |          226 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |              Enable Signal             |             Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | genblk1[3].u_db/FSM_sequential_S_reg_3 |                                         |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | lcd0/icode                             |                                         |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | lcd0/tcode[3]_i_1_n_0                  |                                         |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0           | lcd0/reset_n                            |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | curr_pos                               | lcd0/reset_n                            |                9 |             11 |         1.22 |
+|  clk_IBUF_BUFG | FSM_onehot_state_reg_n_0_[6]           | genblk1[3].u_db/FSM_onehot_state_reg[6] |                7 |             21 |         3.00 |
+|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0           | lcd0/text_count[0]_i_1_n_0              |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG |                                        | lcd0/reset_n                            |               12 |             30 |         2.50 |
+|  clk_IBUF_BUFG | lcd0/init_e_i_2_n_0                    | lcd0/reset_n                            |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG |                                        |                                         |               12 |             33 |         2.75 |
+|  clk_IBUF_BUFG | corr                                   | lcd0/reset_n                            |               11 |             33 |         3.00 |
+|  clk_IBUF_BUFG | max_val                                | lcd0/reset_n                            |                8 |             35 |         4.38 |
+|  clk_IBUF_BUFG | genblk1[3].u_db/FSM_sequential_S_reg_3 | lcd0/reset_n                            |               10 |             44 |         4.40 |
+|  clk_IBUF_BUFG | f[63][7]_i_1_n_0                       | lcd0/reset_n                            |               82 |            512 |         6.24 |
+|  clk_IBUF_BUFG | g[63][7]_i_1_n_0                       | lcd0/reset_n                            |               81 |            512 |         6.32 |
++----------------+----------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+
+

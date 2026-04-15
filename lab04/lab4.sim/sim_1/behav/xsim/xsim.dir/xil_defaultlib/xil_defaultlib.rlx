@@ -1,0 +1,10 @@
+0.7
+2020.2
+Sep 11 2025
+21:29:11
+C:/Users/ryanh/fpga/dlab/lab4/lab4.sim/sim_1/behav/xsim/glbl.v,1748340170,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/ryanh/fpga/dlab/lab4/lab4.srcs/sim_1/new/tb_bin_num2hex_str.sv,1765111335,systemVerilog,,,,tb_bin_num2hex_str,,uvm,../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ryanh/fpga/dlab/lab4/lab4.srcs/sim_1/new/tb_gcd_seq.sv,1765290995,systemVerilog,,,,tb_gcd_seq,,uvm,../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ryanh/fpga/dlab/lab4/lab4.srcs/sources_1/new/bin_num2hex_str.v,1765109414,verilog,,,,bin_num2hex_str,,uvm,../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ryanh/fpga/dlab/lab4/lab4.srcs/sources_1/new/gcd_rec.v,1765018313,verilog,,,,gcd_rec,,uvm,../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/ryanh/fpga/dlab/lab4/lab4.srcs/sources_1/new/gcd_seq.v,1765290957,verilog,,,,gcd_seq,,uvm,../../../../../../../../../Xilinx/2025.1.1/Vivado/data/rsb/busdef,,,,,
