@@ -6,9 +6,6 @@ DLab is an **implementation-oriented digital design course** offered by **Nation
 <br>
 <br>
 Over the course of the semester, I completed **10 labs**. The content covered Verilog RTL coding, FSM design, datapath and controller planning, memory (SRAM) and peripheral module integration, and the establishment of complete testbench writing and verification flows. Starting from simple behavioral descriptions, I eventually progressed to considering architectural choices, resource utilization, and timing constraints based on specifications, gradually developing the ability to transform abstract requirements into synthesizable circuits. Regarding verification, in addition to checking functional correctness through simulation, I also learned to use Vivado ILA (Integrated Logic Analyzer) to observe internal signals during hardware testing, which assisted in debugging and understanding actual hardware behavior.
-<br>
-<br>
-Through the training in DLab, **my capabilities in digital design have grown significantly**. I can now conceptualize overall architectures based on problem specifications and make trade-offs and optimizations regarding power, performance, and area (PPA). Successfully downloading designs onto the FPGA and seeing them run also made me realize that electrical and physical factors still influence the gap between simulation and real circuits; seeing the circuits operate successfully on hardware provided a great sense of achievement. This course has significantly improved my RTL coding and testbench writing skills and established a solid understanding of the complete digital system design and verification flow on FPGAs.
 
 ## Labs
 
