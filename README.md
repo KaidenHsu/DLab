@@ -2,7 +2,7 @@
 
 [![zh-tw](https://img.shields.io/badge/lang-繁體中文-blue.svg)](README.zh-tw.md)
 
-DLab is an **implementation-oriented digital design course** offered by **National Yang Ming Chiao Tung University (NYCU)**. Every lab requires participants to independently complete the **RTL** and corresponding **testbench**, covering the entire process from understanding specifications to design implementation and functional verification. The development board I used in the course was the **Digilent ZedBoard**, featuring the Zynq-7000 SoC platform that combines an ARM Cortex-A9 with an FPGA (this lab focused solely on the PL section) using AMD Xilinx Vivado for design and verification.
+DLab is an **implementation-oriented digital design course** offered by **National Yang Ming Chiao Tung University (NYCU)**. Every lab includes **RTL design** and the corresponding **testbench**, covering the entire process from understanding specs to design implementation and functional verification. The development board I used in the course was the **Digilent ZedBoard** and the Xilinx Vivado environment for development.
 <br>
 <br>
 Over the course of the semester, I completed **10 labs**, which covered Verilog RTL coding, FSM design, datapath and controller planning, memory (SRAM) and peripheral module integration. I considered architectural choices, resource utilization, and timing constraints based on specifications, gradually developing the ability to transform abstract requirements into synthesizable circuits. In verification, Vivado ILA (Integrated Logic Analyzer) was used alongside simulation to observe internal signals during hardware testing to observe actual hardware behavior.
