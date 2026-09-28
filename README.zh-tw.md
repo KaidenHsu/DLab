@@ -7,8 +7,6 @@ DLab 為一堂國立陽明交通大學 (NYCU) 開設，以實作為核心的數�
 <br>
 整個學期共完成 10 個 lab，內容涵蓋 Verilog RTL 撰寫、FSM 設計、資料路徑 (datapath) 與控制邏輯 (controller) 規劃、記憶體 (SRAM) 與周邊模組整合，以及完整 testbench 的撰寫與驗證流程建立。從一開始單純的行為描述，到後來需要依照 spec 思考架構選擇、資源使用 (utilization) 與時序限制 (timing)，逐步培養將抽象需求轉換為可合成 (synthesize) 電路的能力。在驗證 (verification) 方面，除了透過模擬檢查功能正確性，我也學會在板上實測時搭配 Vivado ILA (Integrated Logic Analyzer) 觀察內部訊號，協助除錯與理解實際硬體行為。
 
-## Labs
-
  Labs   | Descriptions
 --------|:-----
 [Lab1][1]|Sequential Binary Multiplier

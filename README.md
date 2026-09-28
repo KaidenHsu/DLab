@@ -7,8 +7,6 @@ DLab is an **implementation-oriented digital design course** offered by **Nation
 <br>
 Over the course of the semester, I completed **10 labs**, which covered Verilog RTL coding, FSM design, datapath and controller planning, memory (SRAM) and peripheral module integration. I considered architectural choices, resource utilization, and timing constraints based on specifications, gradually developing the ability to transform abstract requirements into synthesizable circuits. In verification, Vivado ILA (Integrated Logic Analyzer) was used alongside simulation to observe internal signals during hardware testing to observe actual hardware behavior.
 
-## Labs
-
  Labs   | Descriptions
 --------|:-----
 [Lab1][1]|Sequential Binary Multiplier
