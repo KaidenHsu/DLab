@@ -29,4 +29,4 @@ DLab 為一堂國立陽明交通大學 (NYCU) 開設，以實作為核心的數�
 [9]: lab09/README.zh-tw.md
 [10]: lab10/README.zh-tw.md
 
-<p align="center"><img src="images/dlab_banner.png" alt="banner" /></p>
+<p align="center"><img src="images/hp_banner.png" alt="banner" /></p>

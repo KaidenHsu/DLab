@@ -29,4 +29,4 @@ Over the course of the semester, I completed **10 labs**, which covered Verilog 
 [9]: lab09/
 [10]: lab10/
 
-<p align="center"><img src="images/dlab_banner.png" alt="banner" /></p>
+<p align="center"><img src="images/hp_banner.png" alt="banner" /></p>
